@@ -1,0 +1,42 @@
+.lists {
+    width: 1200px;
+    padding-top: 10px;
+    margin: 0;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+}
+
+//hideNetItem
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.hideNetItem {
+    width: 33.333%;
+}
+
+.content {
+    margin: 0 16px;
+    width: 254px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.hideNetItem-title {
+    margin: 0;
+    min-width: 0;
+    color: #eaecef;
+    font-size: 15px;
+}
+
+.hideNetItem-content {
+    margin: 0;
+    min-width: 0;
+    font-size: 11px;
+    color: #848e9c;
+    margin-top: 4px;
+    text-align: left;
+}

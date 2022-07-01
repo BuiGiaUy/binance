@@ -1,0 +1,99 @@
+.main {
+    padding: 70px 0;
+    background: #181a20;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.form {
+    width: 384px;
+    min-height: 100px;
+    text-align: center;
+    color: rgb(234, 236, 239);
+    border-radius: 2px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+.form .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+.form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 400;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 48px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    background: #181a20;
+    color: rgb(234, 236, 239);
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-radio-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.form-radio {
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-radio-p {
+    padding-top: 3px;
+    padding-left: 6px;
+}
+
+.form-control:hover {
+    border-color: rgb(240, 185, 11);
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.spacer {
+    margin-top: 36px;
+}

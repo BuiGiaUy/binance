@@ -1,0 +1,37 @@
+.lists {
+    width: 400px;
+    margin: 0;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+    padding-top: 14px;
+}
+
+//exchangeItem
+.exchangeItem {
+    width: 100%;
+}
+
+.content {
+    margin: 0 16px;
+    width: 244px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.exchangeItem-title {
+    margin: 0;
+    min-width: 0;
+    color: #eaecef;
+    font-size: 15px;
+}
+
+.exchangeItem-content {
+    margin: 0;
+    min-width: 0;
+    font-size: 11px;
+    color: #848e9c;
+    margin-top: 4px;
+    text-align: left;
+}
