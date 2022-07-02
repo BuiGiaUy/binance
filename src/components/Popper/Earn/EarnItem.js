@@ -1,20 +1,24 @@
 import classNames from 'classnames/bind';
 
 import styles from './EarnItem.module.scss';
-import Button from '~/components/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
 function EarnItem({ data }) {
     return (
-        <Button className={cx('earnItem')} leftIcon={data.leftIcon} hide arrow>
+        <Link className={cx('earnItem')} to={data.to}>
+            <div className={cx('leftIcon')}>{data.leftIcon}</div>
             <div className={cx('content')}>
                 <div className={cx('title')}>
                     <div className={cx('earnItem-title')}>{data.title}</div>
                 </div>
                 <div className={cx('earnItem-content')}>{data.content}</div>
             </div>
-        </Button>
+            <FontAwesomeIcon icon={faArrowRightLong} className={cx('icon-arrow')} />
+        </Link>
     );
 }
 

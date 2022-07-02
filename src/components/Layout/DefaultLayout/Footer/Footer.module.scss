@@ -5,3 +5,18 @@
     width: 100%;
     padding-top: 46px;
 }
+
+.primary {
+    border-radius: 5px;
+    color: #1e2329;
+    background-color: #fcd535;
+    justify-content: center;
+
+    padding: 6px 12px;
+    margin: auto;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(252, 213, 53);
+    }
+}

@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Button.module.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -52,12 +50,9 @@ function Button({
 
     return (
         <Comp className={classes} {...props}>
-            <div className={cx('content')}>
-                {leftIcon && <span className={cx('icon-left')}>{leftIcon}</span>}
-                <span className={cx('title')}>{children}</span>
-                {arrow && <FontAwesomeIcon icon={faArrowRightLong} className={cx('icon-arrow')} />}
-                {rightIcon && <span className={cx('icon-right')}>{rightIcon}</span>}
-            </div>
+            {leftIcon && <span className={cx('icon-left')}>{leftIcon}</span>}
+            <span className={cx('title')}>{children}</span>
+            {rightIcon && <span className={cx('icon-right')}>{rightIcon}</span>}
         </Comp>
     );
 }

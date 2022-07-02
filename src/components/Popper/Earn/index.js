@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 
-import { Wrapper as WrapperPopper } from '~/components/Popper';
 import styles from './EarnItem.module.scss';
 import EarnItem from './EarnItem';
 
@@ -18,7 +17,7 @@ function Earn({ children, items = [] }) {
             placement="bottom-start"
             render={(attrs) => (
                 <div className={cx('lists')} tabIndex="-1" {...attrs}>
-                    <WrapperPopper>{renderItems()}</WrapperPopper>
+                    {renderItems()}
                 </div>
             )}
         >

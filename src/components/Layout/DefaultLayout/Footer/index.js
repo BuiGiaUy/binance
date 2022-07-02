@@ -15,7 +15,7 @@ const onAfterChange = (value) => {
 function Footer() {
     return (
         <footer className={cx('wrapper')}>
-            <Button className={cx('inner')} type="primary">
+            <Button size="large" className={cx('primary')}>
                 gia uy
             </Button>
 
